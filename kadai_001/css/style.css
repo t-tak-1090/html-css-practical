@@ -1,0 +1,156 @@
+@charset "UTF8";
+
+/* PC　スマホ共通スタイル */
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #000;
+    background-color: #fff;
+    font-family: "Noto Sans JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 見出し */
+.title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+/* ヘッダー */
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    padding: 32px 16px;
+    margin: 0 auto 0 auto;
+}
+h1 {
+    border: 1px solid #000;
+    padding: 3px 19px;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    list-style: none;
+    font-size: 34px;
+    margin-left: 20px;
+}
+nav li a {
+    text-decoration: none;
+}
+
+/* メインビジュアル */
+.main-visual img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* About */
+#about {
+    max-width: 820px;
+    margin: 0 auto 80px auto;
+}
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.about-left img {
+    border-radius: 50%;
+    width: 100%;
+}
+.about-right {
+    margin-top: 30px;
+}
+.about-right h3 {
+    font-size: 24px;
+}
+.about-right li {
+    font-size: 18px;
+}
+
+/* Works */
+#works {
+    max-width: 752px;
+    margin: 0 auto;
+}
+#works ul {
+    display: flex;
+    padding: 0;
+    margin-bottom: 50px;
+}
+#works li {
+    list-style: none;
+}
+#works li:nth-child(2) {
+    margin: 0 20px;
+}
+#works img {
+    width: 240px;
+}
+#works p {
+    width: 240px;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    font-size: 18px;
+}
+
+
+/*===========================
+スマホ用スタイル
+===========================*/
+
+@media screen and (max-width: 767px) {
+
+    /* メインビジュアル */
+    .main-visual img {
+        margin-bottom: 0;
+    }
+
+    /* About */
+    .about-flex {
+        flex-direction: column;
+    }
+    .about-left {
+        text-align: center;
+    }
+    .about-left img {
+        width: 80%;
+    }
+    .about-right {
+        padding: 0 40px;
+        margin-top: 0;
+    }
+
+    /* Works */
+    #works ul {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #works li {
+        margin-bottom: 30px;
+    }
+    #works li:nth-child(2) {
+        margin: 0 0 30px 0;
+    }
+    #works li img {
+        width: 80%;
+    }
+    #works p {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
