@@ -32,6 +32,9 @@ h1 {
     border: 1px solid #000;
     padding: 3px 19px;
 }
+nav h1 a {
+    text-decoration: none;
+}
 nav ul {
     display: flex;
 }
@@ -147,10 +150,10 @@ footer p {
         margin: 0 0 30px 0;
     }
     #works li img {
-        width: 80%;
+        width: 90%;
     }
     #works p {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 }
